@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmarker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Amatic+SC:wght@400;700&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.18.0/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="./bootstrap/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+
+  <!-- Login section  -->
+  <section>
+    <div class="container p-5 w-50" id="loginContainer">
+      <h2 class="text-center mb-3">Smart Login System</h2>
+      <form id="loginForm">
+        <div class="form-group position-relative mb-3">
+          <input type="email" id="loginEmail" placeholder="Enter your email" required />
+          <div class="error-message" id="loginEmailError"></div>
+        </div>
+
+        <div class="form-group position-relative mb-3">
+          <input type="password" id="loginPassword" placeholder="Enter your password" required />
+          <div class="error-message" id="loginPasswordError"></div>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+      </form>
+      <h6 class="text-center text-white pt-4">Don’t have an account? <a class="text-white" id="showRegisterForm">Sign
+          Up</a></h6>
+
+    </div>
+
+
+
+    <!-- Sign up section  -->
+    <div class="container p-5 w-50" id="registerContainer">
+      <h2 class="text-center mb-3">Smart Sign Up System </h2>
+      <form id="registerForm">
+        <div class="form-group position-relative mb-3">
+          <input type="text" id="regUsername" placeholder="Enter your username" required />
+          <div class="error-message" id="regUsernameError"></div>
+        </div>
+
+        <div class="form-group position-relative mb-3">
+          <input type="email" id="regEmail" placeholder="Enter your email" required />
+          <div class="error-message" id="regEmailError"></div>
+        </div>
+
+        <div class="form-group position-relative mb-3">
+          <input type="password" id="regPassword" placeholder="Enter your password " required />
+          <div class="error-message" id="regPasswordError"></div>
+        </div>
+
+        <button type="submit" class="btn">Sign Up</button>
+      </form>
+      <h6 class="text-center text-white pt-4">You have an account? <a class="text-white" id="showLoginForm">Sign in</a>
+      </h6>
+
+    </div>
+
+
+
+    <!--  home page section -->
+    <div class="home-container container p-5 w-50" id="homeContainer">
+      <h1 class="text-center text-white">Welcome back to my website Mr. <span id="usernameSpan"></span></h1>
+      <button class="btn btn-logout d-block mx-auto mt-5" id="logoutBtn">Logout</button>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.18.0/dist/sweetalert2.all.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
